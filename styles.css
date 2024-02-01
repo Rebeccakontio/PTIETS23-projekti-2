@@ -6,14 +6,25 @@ body {
     background-color: rgba(252, 252, 233, 0.781)
 }
 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: black;
     font-family: 'Abril Fatface', serif;
     font-size: 60px;
+    margin: 0;
+    position: relative; 
 }
 h1 a {
     text-decoration: none;
     color: black;
+}
+.show-search-link {
+    position: absolute;
+    left: 30px; 
+    top: 50%; 
+    transform: translateY(-50%); 
 }
 nav {
     display: flex;
