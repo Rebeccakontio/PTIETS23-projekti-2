@@ -14,17 +14,18 @@ h1 {
     font-family: 'Abril Fatface', serif;
     font-size: 60px;
     margin: 0;
-    position: relative; 
 }
 h1 a {
     text-decoration: none;
     color: black;
+    order: 1; /* Move the link to the right */
+    margin-top:
 }
 .show-search-link {
     position: absolute;
-    left: 30px; 
-    top: 50%; 
-    transform: translateY(-50%); 
+    left: 30px; /* Adjust the left position as needed */
+    top: 25px; /* Adjust the top position as needed */
+    color: rgb(2, 2, 2);
 }
 nav {
     display: flex;
