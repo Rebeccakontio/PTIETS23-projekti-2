@@ -71,6 +71,17 @@ nav {
     margin: 0 auto;
     float: left;
 }
+.info p { 
+    text-align: center;
+    padding: 10px;
+    font-size: ;
+}
+.info h3 {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 2%;
+}
 @keyframes slider {
     0% {
         left: 0;
