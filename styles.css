@@ -40,3 +40,36 @@ nav {
 .nav-links a:hover {
     color: gold
 }
+#slider {
+    overflow: hidden;
+}
+#slider figure {
+    position: relative;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+    width: 500%;
+}
+#slider figure img {
+    padding-top: 5px;
+    width: 20%;
+    height: auto;
+    max-height: 700px; /* Adjust the max-height as needed */
+    display: block;
+    margin: 0 auto;
+    float: left;
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+}
