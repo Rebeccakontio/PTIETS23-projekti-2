@@ -24,7 +24,7 @@ h1 a {
 .show-search-link {
     position: absolute;
     left: 30px; /* Adjust the left position as needed */
-    top: 25px; /* Adjust the top position as needed */
+    top: 30px; /* Adjust the top position as needed */
     color: rgb(2, 2, 2);
 }
 nav {
