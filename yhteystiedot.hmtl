@@ -22,6 +22,48 @@
             </div>
         </nav> 
     </section>
-    <h1> YHTEYSTIEDOT</h1>
+    <h2> YHTEYSTIEDOT</h2>
+ <div class="container">
+    <div class="contact-form">
+        <h3>Laita viestiä</h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+    <div class="yhteystiedot">
+         <ul>
+            <li>
+            <h3>Laura Forssell</h3>
+            <p>Liiketoiminnan kehittäjä</p></li>
+            
+            <li><h3>Rebecca Kontio</h3>
+            <p>Toimitusjohtaja</p></li>
+
+            <li><h3>Sanni Nevalainen</h3>
+            <p>Markkinointipäällikkö</p></li>
+                
+            <li><h3>Olga Riabkov</h3>
+            <p>Tuotepäällikkö</p></li>
+            
+            <li>
+            <h3>Helmi Husu</h3>
+            <p>Asiakaspäällikkö</p></li><br>
+        </div>
+    <div class="puhelin">
+        <ul>
+        <li>puhelin: 02 345 777</li>
+        <li>sähköposti: info@luxe.com</li>
+    </ul>
+</div>
 </body>
 </html> 
