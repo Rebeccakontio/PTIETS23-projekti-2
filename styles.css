@@ -220,3 +220,80 @@ button {
         left: -100%;
     }
 }
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    h2, h3, h4 {
+        font-size: 20px;
+    }
+    
+    .show-search-link {
+        left: 5px;
+        top: 5px;
+    }
+   
+    .nav-links ul li  {
+        font-size: 3vw;
+        list-style: none;
+        padding: 8px 12px;
+        font-size: 3vw; /* Adjusted font size for small screens */
+        display: block;
+    /* Adjust padding as needed */
+    }
+
+    .info ul li { /* Adjusted font size for info box */
+        width: auto; /* Full width for smaller screens */
+        padding: 3px; /* Reduced padding for info box */
+        margin-bottom: 5px;
+    }
+    .info ul {
+        flex-direction: column;
+    }
+
+    .info h3 {
+        font-size: 6vw;
+        padding-bottom: 5px;
+        padding-top: 5%;
+    }
+    .info h4 {
+        font-size: 3vw;
+        padding-bottom: 0;
+    }
+
+    .info p {
+        font-size: 3vw; /* Adjusted font size for info box text */
+        max-width: 100%; 
+    }
+    .product {
+        flex: 0 1 calc(45% - 20px); /* Two products per row with some margin */
+    }
+    .product-container {
+        max-width: 90%; /* Adjust the container's width to 100% on smaller screens */
+    }
+    .product-info {
+        font-size: 12px;
+    }
+    .product-info h4{
+        font-size: 15px;
+    }
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items on smaller screens */
+    }
+
+    .yhteystiedot,
+    .contact-form {
+        width: 85%; /* Full width for both sections on smaller screens */
+        text-align: center;
+        font-size: 15px;
+    }
+    .container h3 {
+        font-size: 20px; /* Adjust the font size for headings on smaller screens */
+        padding-bottom: 10px;
+    }
+    .yhteystiedot h4  {
+        font-size: 16px;
+    }
+}
