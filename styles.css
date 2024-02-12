@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cinzel:wght@500&family=DM+Serif+Display&family=Lobster+Two&family=Philosopher&family=Protest+Strike&family=Tapestry&family=Titan+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -28,12 +29,16 @@ h2 {
     font-size: 25px;
     font-weight: lighter;
     background-color: rgb(235, 194, 152);
+    font-family: 'Berkshire Swash', serif;
+    font-family: 'Cinzel', serif;
 }
 h3 {
     text-align: center;
     padding-top: 20px;
     color: brown;
     font-size: 25px;
+    font-family: 'Berkshire Swash', serif;
+    font-family: 'Cinzel', serif;
 }
 .show-search-link {
     position: absolute;
@@ -113,7 +118,8 @@ nav {
     font-weight: 1;
     padding: 20px;
     padding-top: 3%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Berkshire Swash', serif;
+    font-family: 'Cinzel', serif;
 }
 .info h4 {
     text-align: center;
@@ -144,14 +150,15 @@ nav {
     font-size: 30px;
     font-weight: 20;
     padding-left: 20px;
+    font-family: 'Berkshire Swash', serif;
+    font-family: 'Cinzel', serif;
 }
 .contact-form {
-    border-radius: 10px;
     width: 40%;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 0 20px rgb(192, 119, 74);
+    box-shadow: 0 0 10px rgb(192, 119, 74);
     margin-top: 50px;
 }
 label, input, textarea {
@@ -180,9 +187,8 @@ button {
     flex: 0 1 calc(32% - 20px); /* Three products per row with some margin */
     margin: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgb(192, 119, 74);
+    box-shadow: 0 0 5px rgb(192, 119, 74);
     box-sizing: border-box;
     display: flex; /* Lisää display: flex; varmistaaksesi, että sisältö mukautuu oikein */
     flex-direction: column;
@@ -191,15 +197,14 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 15px;
-    max-width: 60%; /* Pienennä max-width-arvoa */
+    padding: 5px;
+    max-width: 90%; /* Pienennä max-width-arvoa */
     margin: 0 auto
 }
 .product img {
     width: 100%;
     height: auto;
     max-width: 100%;
-    border-radius: 5px;
 }
 .product-info {
     padding: 10px;
@@ -253,17 +258,17 @@ button {
     }
 
     .info h3 {
-        font-size: 6vw;
+        font-size: 20px;
         padding-bottom: 5px;
         padding-top: 5%;
     }
     .info h4 {
-        font-size: 3vw;
+        font-size: 25px;
         padding-bottom: 0;
     }
 
     .info p {
-        font-size: 3vw; /* Adjusted font size for info box text */
+        font-size: 15px; /* Adjusted font size for info box text */
         max-width: 100%; 
     }
     .product {
