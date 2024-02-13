@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cinzel:wght@500&family=DM+Serif+Display&family=Lobster+Two&family=Philosopher&family=Protest+Strike&family=Tapestry&family=Titan+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(252, 252, 233, 0.781)
+}
+h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Abril Fatface', serif;
+    font-size: 70px;
+}
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    background-color: rgb(253, 233, 202);
+    font-family: 'Berkshire Swash', serif;
+    font-family: 'Cinzel', serif;
+}
+h3 {
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(7, 7, 7);
+    font-size: 25px;
+    font-family: 'Berkshire Swash', serif;
+    font-family: 'Cinzel', serif;
+}
+.show-search-link {
+    position: absolute;
+    left: 30px; /* Adjust the left position as needed */
+    top: 30px; /* Adjust the top position as needed */
+    color: rgb(2, 2, 2);
+}
+#slider {
+    overflow: hidden;
+}
+#slider figure {
+    position: relative;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+    width: 500%;
+}
+#slider figure img {
+    padding-top: 0;
+    width: 20%;
+    height: auto;
+    max-height: 700px; /* Adjust the max-height as needed */
+    display: block;
+    margin: 0;
+    float: left;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.nav-links {
+    flex: 1;
+    text-align: center;
+    border-top: 0.4px solid black; /* Yläviiva */
+    border-bottom: 0.4px solid black; /* Alaviiva */
+    padding: 5px; /* Säädä tarpeesi mukaan */
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+    font-size: 20px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+}
+.nav-links a:hover {
+    color: brown;
+    border-bottom: 2px solid brown;
+    padding-bottom: 12px;
+}
+.info ul li {
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgb(253, 233, 202);
+    font-family: 'Times New Roman', Times, serif;
+}
+.info ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.info h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 1;
+    padding: 20px;
+    padding-top: 3%;
+    font-family: 'Berkshire Swash', serif;
+    font-family: 'Cinzel', serif;
+}
+.info h4 {
+    text-align: center;
+    padding: 10px;
+    padding-top: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.info p {
+    max-width: 750px;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.yhteystiedot ul li{
+    padding: 5px;
+    list-style: none;
+    width: 100%;
+    
+}
+.yhteystiedot {
+    margin-top: 50px;
+    text-align: left;
+    width: 40%;
+    font-size: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 20;
+    padding-left: 20px;
+    font-family: 'Berkshire Swash', serif;
+    font-family: 'Cinzel', serif;
+    
+}
+.contact-form {
+    width: 40%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgb(192, 119, 74);
+    margin-top: 50px;
+}
+label, input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+button {
+    background-color: black;
+    color: #fdfbfb;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product {
+    flex: 0 1 calc(32% - 20px); /* Three products per row with some margin */
+    margin: 15px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgb(192, 119, 74);
+    box-sizing: border-box;
+    display: flex; /* Lisää display: flex; varmistaaksesi, että sisältö mukautuu oikein */
+    flex-direction: column;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    max-width: 90%; /* Pienennä max-width-arvoa */
+    margin: 0 auto
+}
+.product img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    
+}
+.product-info {
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    font-family: 'Berkshire Swash', serif;
+    font-family: 'Cinzel', serif;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+}
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    h2, h3, h4 {
+        font-size: 20px;
+    }
+    
+    .show-search-link {
+        left: 5px;
+        top: 5px;
+    }
+   
+    .nav-links ul li  {
+        font-size: 3vw;
+        list-style: none;
+        padding: 8px 12px;
+        font-size: 3vw; /* Adjusted font size for small screens */
+        display: block;
+    /* Adjust padding as needed */
+    }
+
+    .info ul li { /* Adjusted font size for info box */
+        width: auto; /* Full width for smaller screens */
+        padding: 3px; /* Reduced padding for info box */
+        margin-bottom: 5px;
+    }
+    .info ul {
+        flex-direction: column;
+    }
+
+    .info h3 {
+        font-size: 25px;
+        padding-bottom: 5px;
+        padding-top: 5%;
+    }
+    .info h4 {
+        font-size: 20px;
+        padding-bottom: 0;
+    }
+
+    .info p {
+        font-size: 15px; /* Adjusted font size for info box text */
+        max-width: 100%; 
+    }
+    .product {
+        flex: 0 1 calc(45% - 20px); /* Two products per row with some margin */
+    }
+    .product-container {
+        max-width: 90%; /* Adjust the container's width to 100% on smaller screens */
+    }
+    .product-info {
+        font-size: 12px;
+    }
+    .product-info h4{
+        font-size: 15px;
+    }
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items on smaller screens */
+    }
+
+    .yhteystiedot,
+    .contact-form {
+        width: 85%; /* Full width for both sections on smaller screens */
+        text-align: center;
+        font-size: 15px;
+    }
+    .container h3 {
+        font-size: 20px; /* Adjust the font size for headings on smaller screens */
+        padding-bottom: 10px;
+    }
+    .yhteystiedot h4  {
+        font-size: 16px;
+    }
+}
