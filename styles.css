@@ -338,7 +338,30 @@ button {
     font-family: 'Berkshire Swash', serif;
     font-family: 'Cinzel', serif;
 }
+.somet {
+    display: flex;
+    justify-content: center;
+    
+}
 
+.instagram img {
+    display: block;
+    margin-top: 30px;
+    margin-right: 10px; 
+    margin-left: 10px;
+}
+.facebook img {
+    display: block;
+    margin-top: 35px;
+    margin-right: 10px; 
+    margin-left: 10px;
+}
+.youtube img {
+    display: block;
+    margin-top: 35px;
+    margin-right: 10px; 
+    margin-left: 10px;
+}
 @keyframes slider {
     0% {
         left: 0;
@@ -377,9 +400,10 @@ button {
     }
 
     .info ul li { 
-        width: auto; 
-        padding: 3px; 
-        margin-bottom: 5px;
+        width: calc(100% - 40px); /* Otetaan huomioon marginaalit */
+        margin: 10px; /* Pienemmät marginaalit */
+        padding: 3px; /* Pienempi padding */
+        height: auto;
     }
     .info ul {
         flex-direction: column;
@@ -430,27 +454,4 @@ button {
         font-size: 16px;
     }
 }
-.somet {
-    display: flex;
-    justify-content: center;
-    
-}
 
-.instagram img {
-    display: block;
-    margin-top: 30px;
-    margin-right: 10px; 
-    margin-left: 10px;
-}
-.facebook img {
-    display: block;
-    margin-top: 35px;
-    margin-right: 10px; 
-    margin-left: 10px;
-}
-.youtube img {
-    display: block;
-    margin-top: 35px;
-    margin-right: 10px; 
-    margin-left: 10px;
-}
