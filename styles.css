@@ -55,12 +55,12 @@ h3 {
 }
 .logo-area {
     display: flex;
-    justify-content: space-between; /* Ensure items are spaced apart */
-    align-items: center; /* Align items vertically */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .logo-area__left {
-    flex: 1; /* Allow the left area to expand */
+    flex: 1; 
 }
 
 .logo-area__right {
@@ -69,7 +69,7 @@ h3 {
 
 .cart-link {
     position: absolute;
-    right: 30px; /* Adjust the position */
+    right: 30px; 
     top: 30px;
     color: rgb(2, 2, 2);
     display: flex;
@@ -78,7 +78,7 @@ h3 {
 }
 
 .cart-link__icon {
-    margin-left: 5px; /* Adjust as needed to separate the label and the icon */
+    margin-left: 5px; 
 }
 .cart-link__label {
     font-size: 18px;
@@ -86,7 +86,7 @@ h3 {
 }
 .wishlist-link {
     position: absolute;
-    right: 110px; /* Adjust the position */
+    right: 110px; 
     top: 30px;
     color: rgb(2, 2, 2);
     display: flex;
@@ -95,7 +95,7 @@ h3 {
 }
 
 .wishlist-link__icon {
-    margin-left: 5px; /* Adjust as needed to separate the label and the icon */
+    margin-left: 5px; 
 }
 .wishlist__label {
     font-size: 18px;
@@ -103,7 +103,7 @@ h3 {
 }
 .account-link {
     position: absolute;
-    right: 70px; /* Adjust the position */
+    right: 70px; 
     top: 30px;
     color: rgb(2, 2, 2);
     display: flex;
@@ -112,7 +112,7 @@ h3 {
 }
 
 .account-link__icon {
-    margin-left: 5px; /* Adjust as needed to separate the label and the icon */
+    margin-left: 5px; 
 }
 .account__label {
     font-size: 18px;
@@ -121,7 +121,7 @@ h3 {
 .flag-link {
     position: absolute;
     right: 150px;
-    /* Adjust the position */
+    
     top: 25px;
     display: flex;
     align-items: center;
@@ -308,13 +308,13 @@ button {
     cursor: pointer;
 }
 .product {
-    flex: 0 1 calc(32% - 20px); /* Three products per row with some margin */
+    flex: 0 1 calc(32% - 20px); 
     margin: 15px;
     border: 1px solid #ddd;
     overflow: hidden;
     box-shadow: 0 0 5px rgb(192, 119, 74);
     box-sizing: border-box;
-    display: flex; /* Lisää display: flex; varmistaaksesi, että sisältö mukautuu oikein */
+    display: flex; 
     flex-direction: column;
 }
 .product-container {
@@ -322,7 +322,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 5px;
-    max-width: 90%; /* Pienennä max-width-arvoa */
+    max-width: 90%; 
     margin: 0 auto
 }
 .product img {
@@ -371,14 +371,14 @@ button {
         font-size: 3vw;
         list-style: none;
         padding: 8px 12px;
-        font-size: 3vw; /* Adjusted font size for small screens */
+        font-size: 3vw; 
         display: block;
-    /* Adjust padding as needed */
+    
     }
 
-    .info ul li { /* Adjusted font size for info box */
-        width: auto; /* Full width for smaller screens */
-        padding: 3px; /* Reduced padding for info box */
+    .info ul li { 
+        width: auto; 
+        padding: 3px; 
         margin-bottom: 5px;
     }
     .info ul {
@@ -396,14 +396,14 @@ button {
     }
 
     .info p {
-        font-size: 15px; /* Adjusted font size for info box text */
+        font-size: 15px; 
         max-width: 100%; 
     }
     .product {
-        flex: 0 1 calc(45% - 20px); /* Two products per row with some margin */
+        flex: 0 1 calc(45% - 20px); 
     }
     .product-container {
-        max-width: 90%; /* Adjust the container's width to 100% on smaller screens */
+        max-width: 90%; 
     }
     .product-info {
         font-size: 12px;
@@ -412,18 +412,18 @@ button {
         font-size: 15px;
     }
     .container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center items on smaller screens */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .yhteystiedot,
     .contact-form {
-        width: 85%; /* Full width for both sections on smaller screens */
+        width: 85%; 
         text-align: center;
         font-size: 15px;
     }
     .container h3 {
-        font-size: 20px; /* Adjust the font size for headings on smaller screens */
+        font-size: 20px; 
         padding-bottom: 10px;
     }
     .yhteystiedot h4  {
@@ -439,18 +439,18 @@ button {
 .instagram img {
     display: block;
     margin-top: 30px;
-    margin-right: 10px; /* Add margin to the right side of each icon */
+    margin-right: 10px; 
     margin-left: 10px;
 }
 .facebook img {
     display: block;
     margin-top: 35px;
-    margin-right: 10px; /* Add margin to the right side of each icon */
+    margin-right: 10px; 
     margin-left: 10px;
 }
 .youtube img {
     display: block;
     margin-top: 35px;
-    margin-right: 10px; /* Add margin to the right side of each icon */
+    margin-right: 10px; 
     margin-left: 10px;
 }
