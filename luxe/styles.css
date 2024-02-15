@@ -22,7 +22,7 @@ h2 {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 30px;
-    background-color: rgb(253, 233, 202);
+    background-color:  rgb(234, 219, 200);
     font-family: 'Berkshire Swash', serif;
     font-family: 'Cinzel', serif;
 }
@@ -36,10 +36,124 @@ h3 {
 }
 .show-search-link {
     position: absolute;
-    left: 30px; /* Adjust the left position as needed */
-    top: 30px; /* Adjust the top position as needed */
+    left: 30px; 
+    top: 30px; 
     color: rgb(2, 2, 2);
+    display: flex;
+    align-items: center;
 }
+
+.show-search-link__text {
+    margin-left: 15px;
+    font-size: 20px;
+    
+}
+.show-search-link,
+.show-search-link:hover, 
+.show-search-link:visited {
+    text-decoration: none !important; 
+}
+.logo-area {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo-area__left {
+    flex: 1; 
+}
+
+.logo-area__right {
+    position: relative;
+}
+
+.cart-link {
+    position: absolute;
+    right: 30px; 
+    top: 30px;
+    color: rgb(2, 2, 2);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cart-link__icon {
+    margin-left: 5px; 
+}
+.cart-link__label {
+    font-size: 18px;
+    margin-right: 15px;
+}
+.wishlist-link {
+    position: absolute;
+    right: 110px; 
+    top: 30px;
+    color: rgb(2, 2, 2);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.wishlist-link__icon {
+    margin-left: 5px; 
+}
+.wishlist__label {
+    font-size: 18px;
+    margin-right: 15px;
+}
+.account-link {
+    position: absolute;
+    right: 70px; 
+    top: 30px;
+    color: rgb(2, 2, 2);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.account-link__icon {
+    margin-left: 5px; 
+}
+.account__label {
+    font-size: 18px;
+    margin-right: 15px;
+}
+.flag-link {
+    position: absolute;
+    right: 150px;
+    
+    top: 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgba(252, 252, 233, 0.781);
+    
+}
+
+.flag-link .dropdown-content {
+    display: flex;
+    gap: 10px;
+    background-color: rgba(252, 252, 233, 0.781);
+    
+}
+
+.flag-link .dropdown-content a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: rgb(252, 252, 233, 0.781);
+    top: 25px;
+}
+
+.flag-link .dropdown-content a:hover {
+    background-color: rgb(252, 252, 233, 0.781);
+}
+.flag-link .dropdown-content a:visited {
+    color: black;
+    
+}
+
 #slider {
     overflow: hidden;
 }
@@ -89,13 +203,16 @@ nav {
 }
 .info ul li {
     text-align: center;
-    padding: 20px;
-    display: inline-block;
+    box-sizing: border-box;
     list-style: none;
     width: 100%;
     font-size: 20px;
-    background-color: rgb(253, 233, 202);
     font-family: 'Times New Roman', Times, serif;
+    border-radius: 25px;
+    background: rgb(234, 219, 200);
+    padding: 10px;
+    height: 275px;
+    margin: 20px;
 }
 .info ul {
     padding: 0;
@@ -119,6 +236,7 @@ nav {
     padding-top: 5%;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
+    font-size: 23px;
 }
 .info p {
     max-width: 750px;
@@ -128,18 +246,22 @@ nav {
     margin-top: 10px;
     margin: 0 auto;
     font-size: 20px;
-}
-.yhteystiedot ul li{
+    .yhteystiedot ul li
     padding: 5px;
     list-style: none;
     width: 100%;
-    
 }
 .yhteystiedot {
     margin-top: 50px;
     text-align: left;
     width: 40%;
     font-size: 20px;
+}
+.yhteystiedot ul li{
+    padding: 5px;
+    list-style: none;
+    width: 100%;
+    
 }
 .container {
     display: flex;
@@ -307,4 +429,28 @@ button {
     .yhteystiedot h4  {
         font-size: 16px;
     }
+    .somet {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .instagram img {
+        display: block;
+        margin-top: 30px;
+        margin-right: 10px; 
+        margin-left: 10px;
+    }
+    .facebook img {
+        display: block;
+        margin-top: 35px;
+        margin-right: 10px; 
+        margin-left: 10px;
+    }
+    .youtube img {
+        display: block;
+        margin-top: 35px;
+        margin-right: 10px; 
+        margin-left: 10px;
+    }
+
 }
