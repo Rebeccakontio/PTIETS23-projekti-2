@@ -203,27 +203,22 @@ nav {
 }
 .info ul li {
     text-align: center;
-    padding: 20px;
     box-sizing: border-box;
     list-style: none;
     width: 100%;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     border-radius: 25px;
-  background: rgb(234, 219, 200);
-  padding: 10px;
-  width: 700;
-  height: 275px;
-  margin: 20px;
+    background: rgb(234, 219, 200);
+    padding: 30px;
+    height: 280px;
+    margin: 20px;
 }
-
-
 .info ul {
     padding: 0;
     margin: 0;
-    list-style: none;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 .info h3 {
     text-align: center;
@@ -238,17 +233,23 @@ nav {
     text-align: center;
     padding: 10px;
     padding-top: 5%;
+    padding-bottom: 10%;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 500;
-    font-size: 23px;
+    font-weight: 550;
+    font-size: 20px;
 }
 .info p {
-    max-width: 750px;
     text-align: center;
-    padding: 20px;
+    padding: 0 150px;
     line-height: 1.6;
-    margin-top: 10px;
-    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.yhteystiedot {
+    margin-top: 50px;
+    text-align: left;
+    width: 40%;
     font-size: 20px;
 }
 .yhteystiedot ul li{
@@ -256,12 +257,6 @@ nav {
     list-style: none;
     width: 100%;
     
-}
-.yhteystiedot {
-    margin-top: 50px;
-    text-align: left;
-    width: 40%;
-    font-size: 20px;
 }
 .container {
     display: flex;
@@ -308,13 +303,13 @@ button {
     cursor: pointer;
 }
 .product {
-    flex: 0 1 calc(32% - 20px); 
+    flex: 0 1 calc(32% - 20px); /* Three products per row with some margin */
     margin: 15px;
     border: 1px solid #ddd;
     overflow: hidden;
     box-shadow: 0 0 5px rgb(192, 119, 74);
     box-sizing: border-box;
-    display: flex; 
+    display: flex; /* Lisää display: flex; varmistaaksesi, että sisältö mukautuu oikein */
     flex-direction: column;
 }
 .product-container {
@@ -322,7 +317,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 5px;
-    max-width: 90%; 
+    max-width: 90%; /* Pienennä max-width-arvoa */
     margin: 0 auto
 }
 .product img {
@@ -341,7 +336,6 @@ button {
 .somet {
     display: flex;
     justify-content: center;
-    
 }
 
 .instagram img {
@@ -362,6 +356,7 @@ button {
     margin-right: 10px; 
     margin-left: 10px;
 }
+
 @keyframes slider {
     0% {
         left: 0;
@@ -385,25 +380,27 @@ button {
         font-size: 20px;
     }
     
-    .show-search-link {
+    .show-search-link, .show-search-link__text, .show-search-link__icon {
         left: 5px;
         top: 5px;
+        font-size: 15px;
+        width: 15px;
     }
    
     .nav-links ul li  {
         font-size: 3vw;
         list-style: none;
         padding: 8px 12px;
-        font-size: 3vw; 
-        display: block;
-    
+        font-size: 3vw; /* Adjusted font size for small screens */
+    /* Adjust padding as needed */
     }
 
-    .info ul li { 
+    .info ul li { /* Adjusted font size for info box */
         width: calc(100% - 40px); /* Otetaan huomioon marginaalit */
         margin: 10px; /* Pienemmät marginaalit */
-        padding: 3px; /* Pienempi padding */
-        height: auto;
+        padding: 0 10px; /* Pienempi padding */
+        height: 120px;
+        font-size: 15px;
     }
     .info ul {
         flex-direction: column;
@@ -415,19 +412,20 @@ button {
         padding-top: 5%;
     }
     .info h4 {
-        font-size: 20px;
-        padding-bottom: 0;
+        font-size: 15px;
+        padding-bottom: 3%;
     }
 
     .info p {
-        font-size: 15px; 
-        max-width: 100%; 
+        font-size: 15px; /* Adjusted font size for info box text */
+        max-width: 100%;
+        padding: 0 30px; 
     }
     .product {
-        flex: 0 1 calc(45% - 20px); 
+        flex: 0 1 calc(45% - 20px); /* Two products per row with some margin */
     }
     .product-container {
-        max-width: 90%; 
+        max-width: 90%; /* Adjust the container's width to 100% on smaller screens */
     }
     .product-info {
         font-size: 12px;
@@ -436,22 +434,50 @@ button {
         font-size: 15px;
     }
     .container {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items on smaller screens */
     }
 
     .yhteystiedot,
     .contact-form {
-        width: 85%; 
+        width: 85%; /* Full width for both sections on smaller screens */
         text-align: center;
         font-size: 15px;
     }
     .container h3 {
-        font-size: 20px; 
+        font-size: 20px; /* Adjust the font size for headings on smaller screens */
         padding-bottom: 10px;
     }
     .yhteystiedot h4  {
         font-size: 16px;
     }
-}
 
+    .show-search-link {
+        left: 10px;
+        top: 10px;
+    }
+    .flag-link {
+        right: 10px;
+    }
+
+    .flag-link .dropdown-content {
+        top: auto;
+        right: 5px;
+        position: absolute;
+        padding-bottom: 10px;
+    }
+
+    .flag-link .dropdown-content a {
+        font-size: 12px; /* Adjust the font size for smaller screens */
+        padding: 8px; /* Adjust the padding for smaller screens */
+    }
+    .cart-link {
+        right: 70px;
+        width: 15px;
+        height: 15px;
+    }
+    .account-link,
+    .wishlist-link {
+        display: none;
+    }
+}
