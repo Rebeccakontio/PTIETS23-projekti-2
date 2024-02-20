@@ -471,10 +471,10 @@ button {
         font-size: 12px; /* Adjust the font size for smaller screens */
         padding: 8px; /* Adjust the padding for smaller screens */
     }
-    .cart-link {
-        right: 70px;
-        width: 15px;
-        height: 15px;
+   .cart-link {
+        right: 75px;
+        width: 10px;
+        height: 10px;
     }
     .account-link,
     .wishlist-link {
