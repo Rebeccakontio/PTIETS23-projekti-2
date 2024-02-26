@@ -386,20 +386,11 @@ button {
         font-size: 15px;
         width: 15px;
     }
-   
-    .nav-links ul li  {
-        font-size: 3vw;
-        list-style: none;
-        padding: 8px 12px;
-        font-size: 3vw; /* Adjusted font size for small screens */
-    /* Adjust padding as needed */
-    }
-
-    .info ul li { /* Adjusted font size for info box */
+        .info ul li { /* Adjusted font size for info box */
         width: calc(100% - 40px); /* Otetaan huomioon marginaalit */
         margin: 10px; /* Pienemmät marginaalit */
         padding: 0 10px; /* Pienempi padding */
-        height: 120px;
+        height: 135px;
         font-size: 15px;
     }
     .info ul {
@@ -419,7 +410,7 @@ button {
     .info p {
         font-size: 15px; /* Adjusted font size for info box text */
         max-width: 100%;
-        padding: 0 30px; 
+        padding: 0 20px; 
     }
     .product {
         flex: 0 1 calc(45% - 20px); /* Two products per row with some margin */
@@ -457,7 +448,7 @@ button {
         top: 10px;
     }
     .flag-link {
-        right: 10px;
+        right: 25px;
     }
 
     .flag-link .dropdown-content {
@@ -469,12 +460,13 @@ button {
 
     .flag-link .dropdown-content a {
         font-size: 12px; /* Adjust the font size for smaller screens */
-        padding: 8px; /* Adjust the padding for smaller screens */
+        padding: 0; /* Adjust the padding for smaller screens */
     }
-   .cart-link {
-        right: 75px;
-        width: 10px;
-        height: 10px;
+    .cart-link {
+        display: block;
+        position: absolute;
+        top: 1%;
+        right: 1px; 
     }
     .account-link,
     .wishlist-link {
