@@ -367,6 +367,12 @@ button {
     margin-right: 10px; 
     margin-left: 10px;
 }
+.footer-content {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
 
 @keyframes slider {
     0% {
